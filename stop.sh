@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-cd ~/node
+cd ~/customer
 pm2 stop www || true
