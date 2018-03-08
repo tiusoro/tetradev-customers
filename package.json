@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "test": "mocha"
+    "test": "mocha",
+    "stop": "pkill --signal SIGINT nodejsapp"
   },
   "dependencies": {
     "ejs": "^1.0.0",

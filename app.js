@@ -8,6 +8,8 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 
+process.title = 'nodejsapp';
+
 //load customers route
 var customers = require('./routes/customers'); 
 var app = express();
