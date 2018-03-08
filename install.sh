@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 sudo set -e
 
+mkdir customer
+
 # update instance
 sudo yum -y update
 
