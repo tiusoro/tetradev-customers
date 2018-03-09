@@ -13,6 +13,9 @@ sudo yum install mysql-server -y
 #start mysql daemon
 sudo service mysqld start
 
+#Create database
+sudo mysql --user=root --password='' nodejs < customer.sql
+
 # add nodejs to yum
 sudo curl --silent --location https://rpm.nodesource.com/setup_4.x | bash -
 sudo yum -y install nodejs
