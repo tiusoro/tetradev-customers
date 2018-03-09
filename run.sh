@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 cd ~/customers
-npm start
+forever start app.js
