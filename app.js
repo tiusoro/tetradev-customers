@@ -45,7 +45,7 @@ app.use(
         
         host: 'localhost',
         user: 'root',
-        password : 'root',
+        password : '',
         port : 3306, //port mysql
         database:'nodejs'
 
