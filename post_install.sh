@@ -4,7 +4,7 @@ set -e
 cd ~/customer
 npm install
 
-npm install forever -g
+sudo npm install forever -g
 
 # setup NODE_ENV
 if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
