@@ -4,8 +4,6 @@ sudo set -e
 # update instance
 sudo yum -y update
 
-# install general libraries like Java or ImageMagick
-sudo yum -y install default-jre ImageMagick
 
 #install mysql
 sudo yum install mysql-server -y
