@@ -3,7 +3,7 @@ var request = require('request');
 
 it('Customer listing page', function (done) {
   var options = {
-    url: 'http://10.12.108.11:8000/customers/',
+    url: 'http://ec2-52-202-213-16.compute-1.amazonaws.com:8000/customers/',
     headers: {
       'Content-Type': 'text/html'
     }
@@ -17,7 +17,7 @@ it('Customer listing page', function (done) {
 
 it('Customer add page', function (done) {
   var options = {
-    url: 'http://10.12.108.11:8000/customers/add',
+    url: 'http://ec2-52-202-213-16.compute-1.amazonaws.com:8000/customers/add',
     headers: {
       'Content-Type': 'text/html'
     }
