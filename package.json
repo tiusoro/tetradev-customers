@@ -11,7 +11,7 @@
     "ejs": "latest",
     "express": "latest",
     "express-myconnection": "latest",
-    "jade": "*",
+    "jade": "latest",
     "mysql": "latest",
     "chai": "latest",
     "mocha": "latest",
