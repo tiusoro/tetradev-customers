@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-cd ~/customer
+cd ~/customers
 forever stopall
