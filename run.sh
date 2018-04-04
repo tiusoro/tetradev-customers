@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd ~/customer
+cd ~/customers
 forever start app.js
