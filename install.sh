@@ -12,5 +12,5 @@ sudo yum install mysql-server -y
 sudo service mysqld start
 
 #Create database
-cd ~/customer
+cd ~/customers
 sudo cat customer.sql | mysql --user=root --password=''
