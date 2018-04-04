@@ -4,8 +4,6 @@ set -e
 cd ~/customer
 npm install
 
-sudo npm install forever -g
-
 # setup NODE_ENV
 if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
     export NODE_ENV=$DEPLOYMENT_GROUP_NAME
