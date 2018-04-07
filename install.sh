@@ -28,4 +28,3 @@ sudo service postgresql start
 #cd ~/customers
 #sudo cat customer.sql | mysql --user=root --password=''
 sudo -u postgres -i
-createdb nodejs
