@@ -4,6 +4,11 @@ set -e
 cd ~/customers
 npm install
 
+cd ~/customers/sqls/bundle
+sudo su - postgres
+createdb customers
+sqitch deploy db:pg:customers
+
 # setup NODE_ENV
 if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
     export NODE_ENV=$DEPLOYMENT_GROUP_NAME

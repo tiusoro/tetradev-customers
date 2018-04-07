@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TABLE customers.customer;
+DROP TABLE customer;
 
 COMMIT;
