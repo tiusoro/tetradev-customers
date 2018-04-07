@@ -5,3 +5,4 @@
 appschema 2018-04-07T07:48:37Z Tetra <tetra@tetra.com> # create customer schema
 customer [appschema] 2018-04-07T08:24:47Z vagrant,,, <vagrant@vagrant> # Create customer table.
 insert_data [customer appschema] 2018-04-07T08:31:50Z vagrant,,, <vagrant@vagrant> # inserting data
+@v1.0 2018-04-07T08:36:41Z Tetra <tetra@tetra.com> # v1.0
