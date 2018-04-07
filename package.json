@@ -12,6 +12,7 @@
     "express": "latest",
     "express-myconnection": "latest",
     "jade": "latest",
+    "pug": "latest",
     "mysql": "latest",
     "chai": "latest",
     "mocha": "latest",
