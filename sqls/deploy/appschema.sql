@@ -3,5 +3,6 @@
 BEGIN;
 
 CREATE SCHEMA customers;
+CREATE DATABASE nodejs;
 
 COMMIT;
