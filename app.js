@@ -15,12 +15,13 @@ var customers = require('./routes/customers');
 var app = express();
 
 var connection  = require('express-myconnection'); 
-var mysql = require('mysql');
+var postgresql  = require('pg');
 
 // all environments
 app.set('port', process.env.PORT || 8000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
 //app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
@@ -41,12 +42,12 @@ if ('development' == app.get('env')) {
 
 app.use(
     
-    connection(mysql,{
+    connection(postgresql,{
         
         host: 'localhost',
-        user: 'root',
+        user: 'postgres',
         password : '',
-        port : 3306, //port mysql
+        port : 5432, //port postgresql
         database:'nodejs'
 
     },'pool') //or single
