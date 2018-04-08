@@ -4,11 +4,6 @@ set -e
 cd ~/customers
 npm install
 
-cd ~/customers/sqls/bundle
-sudo -u postgres -H sh -c 'createdb nodejs;'
-echo 'Database created.'
-
-
 # setup NODE_ENV
 if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
     export NODE_ENV=$DEPLOYMENT_GROUP_NAME

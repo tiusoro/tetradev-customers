@@ -27,3 +27,5 @@ sudo service postgresql start
 #Create database
 #cd ~/customers
 #sudo cat customer.sql | mysql --user=root --password=''
+sudo -u postgres -H sh -c 'createdb nodejs; cd ~/customers/sqls/bundle; sqitch deploy db:pg:nodejs'
+echo 'Database created.'
