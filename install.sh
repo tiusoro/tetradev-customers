@@ -27,4 +27,5 @@ sudo service postgresql start
 #Create database
 #cd ~/customers
 #sudo cat customer.sql | mysql --user=root --password=''
-sudo -u postgres -i
+sudo su - postgres -c 'createdb nodejs'
+echo 'Database created.'
