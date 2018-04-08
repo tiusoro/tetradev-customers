@@ -5,9 +5,9 @@ cd ~/customers
 npm install
 
 cd ~/customers/sqls/bundle
-sudo su - postgres
-createdb customers
-sqitch deploy db:pg:customers
+sudo -u postgres -H sh -c 'createdb nodejs;'
+echo 'Database created.'
+
 
 # setup NODE_ENV
 if [ ! -z "$DEPLOYMENT_GROUP_NAME" ]; then
