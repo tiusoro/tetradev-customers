@@ -6,6 +6,8 @@
 exports.list = function(req, res){
 
   req.getConnection(function(err,connection){
+
+        connection.connect();
        
         var query = connection.query('SELECT * FROM customer',function(err,rows)
         {
