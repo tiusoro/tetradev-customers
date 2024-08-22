@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing Package to run app in background...
+      - npm install forever -g
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - forever start app.js
+  build:
+    commands:
+      - echo Build start on `date`
+      - echo Compiling the customer code
+      - npm test
+  post_build:
+    commands:
+      - echo Build completed on `date`
